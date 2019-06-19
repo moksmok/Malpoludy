@@ -1,0 +1,60 @@
+.btn {
+    z-index: 1000;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    position: absolute;
+
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    bottom: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media only screen and (max-width: $bp-middle) {
+        font-size: 1.3rem;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        border: 2px solid orange;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        top: 5px;
+        left: 10px;
+        transition: .5s ease-out;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        border: 2px solid white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        top: -5px;
+        left: 0px;
+        transition: .5s ease-out;
+    }
+
+
+    &:hover::after {
+        top: -5px;
+        left: 0px;
+    }
+
+    &:hover::before {
+        top: 5px;
+        left: 10px;
+    }
+}
+
+

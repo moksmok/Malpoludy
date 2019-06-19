@@ -1,0 +1,57 @@
+
+@keyframes silde-in{
+    from{
+        transform: translateX(100%);
+        visibility: visible;
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes rotate {
+    0% {
+	transform: rotate(0deg);
+    }
+
+    100% {
+	transform: rotate(360deg);
+    }
+}
+
+@keyframes lineBop {
+    0%   { 
+        width: 100px;
+    }
+    
+    50% {  
+        width: 300px;
+        height: 200px;
+    }
+
+    100% { 
+        width: 100px;
+    }
+  }
+
+
+  @keyframes socialColor {
+      0% {
+        color: white;
+      }
+
+      50% {
+        color: var(--color-primary);
+      }
+
+      100% {
+        color: white;
+      }
+  }
+
+
+  
+
+
+  
+ 

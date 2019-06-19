@@ -1,0 +1,128 @@
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
+@mixin titleSection {
+
+    &:hover &__title {
+        color: var(--color-primary);
+    }
+
+    &:hover &__title::before,
+    &:hover &__title::after {
+        transform: scale(1);
+    }
+
+    &__title {
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height: 100px;
+        color: white;
+        transition: color 2s;
+ 
+        & h2 {
+         font-size: 5rem;
+         text-align: center;
+         text-transform: uppercase;
+         margin-top: 1rem;
+        }
+ 
+         
+ 
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+ 
+            border-left: 3px solid white;
+            border-right: 3px solid white;
+            transform: scaleY(0);
+            transition: 1s;
+            
+        }
+ 
+         &::after {
+             content: '';
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+ 
+             border-bottom: 3px solid white;
+             border-top: 3px solid white;
+             transform: scaleX(0);
+             transition: 1s;
+         }
+       }  
+}
+
+@mixin titleSection-black {
+    &:hover &__title {
+        color: var(--color-primary);
+    }
+
+    &:hover &__title::before,
+    &:hover &__title::after {
+        transform: scale(1);
+    }
+
+    &__title {
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height: 100px;
+        color: black;
+        transition: color 1.5s;
+        
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3.5rem;
+            transition: none;
+        }
+        
+ 
+        & h2 {
+         font-size: 5rem;
+         text-align: center;
+         text-transform: uppercase;
+         margin-top: 1rem;
+
+         
+        }
+ 
+ 
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+ 
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            transform: scaleY(0);
+            transition: 1s;
+            
+        }
+ 
+         &::after {
+             content: '';
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+ 
+             border-bottom: 3px solid black;
+             border-top: 3px solid black;
+             transform: scaleX(0);
+             transition: 1s;
+         }
+    }
+}

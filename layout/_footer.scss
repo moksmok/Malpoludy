@@ -1,0 +1,119 @@
+.footer {
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    
+
+    &__logo {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: white;
+
+
+        & span {
+            color: orange;
+        }
+    }
+
+    &__nav {
+        
+        
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+
+
+        @media only screen and (max-width: $bp-middle) {
+            flex-direction: column;
+        }
+        
+        
+    }
+
+    &__link {
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 0 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:link,
+        &:visited {
+            color: white;
+        }
+    }
+
+    &__sign {
+        color: var(--color-primary);
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: 'Nunito';
+        text-align: center;
+        
+
+
+        & img {
+            height: 1.2rem;
+            padding: 0 5px;
+        }
+    }
+}
+
+
+//          SOCIAL ICONS
+
+.social-nav {
+    width: 30%;
+    font-size: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 60%;
+    }
+    
+
+    &__list {
+        padding: 0rem 0;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__link {
+
+
+
+        &:link,
+        &:visited {
+            color: var(--color-primary);
+        }
+    }
+}
+
+
+.footer > div {
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

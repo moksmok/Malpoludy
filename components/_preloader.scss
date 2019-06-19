@@ -1,0 +1,38 @@
+.preload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 20000;
+    visibility: visible;
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: #10131a;
+    transition: opacity 400ms ease-in-out, visibility 400ms ease-in-out;
+    
+
+    &__image {
+        width: 200px;
+        height: 200px;
+        animation: rotate 0.8s infinite ease-in-out;
+
+    }
+}
+
+.show-preloader {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+

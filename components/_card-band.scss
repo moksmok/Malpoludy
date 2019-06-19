@@ -1,0 +1,59 @@
+
+
+
+.card-about {
+    transition: transform 1s;
+    
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+       }
+
+    & .member {
+        height: 200px;
+        width: auto;
+        transition: all 1s;
+
+        
+        @media only screen and (max-width: $bp-middle) {
+            height: 15rem;
+        }
+        
+        &:hover {
+            transform: translateY(-1rem) scale(1.03);
+        }
+    }
+
+
+    @media only screen and (max-width: $bp-largest) {
+        flex: 0 50%;
+    }
+  
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex: 0 100%;
+    }
+    
+
+    & p {
+        color: white;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-items: center;
+    }
+    
+    &__icons {
+        display: flex;
+        justify-content: center;
+        color: orange;
+        font-size: 4rem;
+        
+        & img {
+            height: 4rem;
+            width: auto;
+            font-size: 2rem;
+        }
+
+    }   
+}
+
