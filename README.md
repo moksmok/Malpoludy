@@ -1,4 +1,4 @@
 # Małpoludy
 Rock band website
 
-https://malpoludy.marcelzdrojewski.com/
+https://malpoludy.pl/
